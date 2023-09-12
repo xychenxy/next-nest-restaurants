@@ -66,6 +66,22 @@ export const HeaderComponent = ({
 								</Button>
 							</Link>
 						</span>
+
+						<Button
+							$appearance="outline"
+							aria-label="food cart"
+							onClick={toggleCartVisibility}
+						>
+							Sign In
+						</Button>
+						<Button
+							$appearance="outline"
+							aria-label="food cart"
+							onClick={toggleCartVisibility}
+						>
+							Sign Up
+						</Button>
+
 						<Button
 							$appearance="outline"
 							aria-label="food cart"
@@ -84,6 +100,7 @@ export const HeaderComponent = ({
 							)}
 						</Button>
 					</div>
+
 					<ShoppingCartMenu
 						isOpen={isCartVisible}
 						onClose={toggleCartVisibility}
